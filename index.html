@@ -5,27 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Milaan Community Guidelines</title>
     <style>
+      :root {
+        --primary-color: #2563eb;
+        --secondary-color: #1e40af;
+        --text-color: #1f2937;
+        --light-bg: #f3f4f6;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Arial, sans-serif;
         line-height: 1.6;
+        color: var(--text-color);
+        background: white;
       }
+
       header {
+        background: var(--primary-color);
+        color: white;
+        padding: 2rem 1rem;
         text-align: center;
-        background-color: #f4f4f4;
-        padding: 10px 0;
       }
-      h1 {
-        color: #333;
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
       }
-      section {
-        margin: 20px 0;
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
       }
+
+      .section {
+        background: white;
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 1.5rem;
+      }
+
+      li {
+        margin-bottom: 0.75rem;
+        position: relative;
+      }
+
+      li:before {
+        content: "•";
+        color: var(--primary-color);
+        font-weight: bold;
+        position: absolute;
+        left: -1.5rem;
+      }
+
       footer {
+        background: var(--light-bg);
         text-align: center;
-        margin-top: 30px;
-        font-size: 0.9em;
-        color: #666;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+      }
+
+      .warning {
+        background: #fee2e2;
+        border-left: 4px solid #ef4444;
+        padding: 1rem;
+        margin: 2rem 0;
+        border-radius: 4px;
+      }
+
+      @media (max-width: 640px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        .section {
+          padding: 1.5rem;
+        }
       }
     </style>
   </head>
@@ -35,56 +108,145 @@
       <p>Building a safe and inclusive space for students.</p>
     </header>
 
-    <section>
-      <h2>1. Respect and Inclusivity</h2>
-      <p>
-        Treat everyone with respect, regardless of their background, beliefs, or
-        identity. Hate speech, harassment, or discrimination is not tolerated.
-      </p>
-    </section>
+    <div class="container">
+      <section class="section">
+        <h2>1. Respect and Inclusivity</h2>
+        <ul>
+          <li>
+            Treat all community members with respect, dignity, and kindness
+          </li>
+          <li>
+            Zero tolerance for discrimination based on race, ethnicity, gender,
+            sexual orientation, religion, disability, or any other
+            characteristic
+          </li>
+          <li>
+            Bullying, hate speech, and targeted harassment will result in
+            immediate account review
+          </li>
+          <li>
+            Use inclusive language and remain mindful of diverse perspectives
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>2. Authentic Interactions</h2>
-      <p>
-        Use your real identity. Impersonation or creating fake profiles is
-        prohibited.
-      </p>
-    </section>
+      <section class="section">
+        <h2>2. Authentic Interactions</h2>
+        <ul>
+          <li>Provide accurate information in your profile</li>
+          <li>Use a real photo that clearly shows your face</li>
+          <li>One account per person; multiple accounts are prohibited</li>
+          <li>Verify your student status when requested</li>
+          <li>No impersonating other students, faculty, or institutions</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>3. Appropriate Content</h2>
-      <p>
-        Do not share explicit, violent, or offensive content. Respect Milaan’s
-        content standards.
-      </p>
-    </section>
+      <section class="section">
+        <h2>3. Appropriate Content</h2>
+        <ul>
+          <li>Keep content relevant to academic and student life</li>
+          <li>No explicit, adult, or inappropriate material</li>
+          <li>Avoid graphic violence, gore, or disturbing content</li>
+          <li>No promotion of dangerous activities or substance abuse</li>
+          <li>
+            Keep language professional and appropriate for an academic setting
+          </li>
+          <li>Content must be suitable for users aged 13 and above</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>4. Intellectual Property</h2>
-      <p>
-        Share only content you own or have rights to post. Plagiarism and
-        copyright violations are not allowed.
-      </p>
-    </section>
+      <section class="section">
+        <h2>4. Intellectual Property</h2>
+        <ul>
+          <li>Only share content you own or have permission to use</li>
+          <li>Properly credit sources and references</li>
+          <li>No unauthorized sharing of course materials or paid content</li>
+          <li>Respect trademarks and copyrighted material</li>
+          <li>
+            Do not share or sell academic work, assignments, or exam materials
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>5. Privacy and Security</h2>
-      <p>
-        Respect the privacy of others and do not share personal information
-        without consent.
-      </p>
-    </section>
+      <section class="section">
+        <h2>5. Privacy and Security</h2>
+        <ul>
+          <li>Never share personal contact information publicly</li>
+          <li>Protect others' privacy; no sharing of private conversations</li>
+          <li>No recording or screenshots without explicit permission</li>
+          <li>Keep location sharing settings appropriate for your safety</li>
+          <li>No collecting or harvesting user data</li>
+          <li>Report security concerns immediately</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>6. Reporting and Accountability</h2>
-      <p>
-        Report inappropriate behavior or content using the app's reporting
-        tools. Milaan will review and take action as needed.
-      </p>
-    </section>
+      <section class="section">
+        <h2>6. Academic Integrity</h2>
+        <ul>
+          <li>No cheating, plagiarism, or academic dishonesty</li>
+          <li>Do not buy, sell, or trade academic work</li>
+          <li>Be honest about your academic credentials</li>
+          <li>Maintain the integrity of educational institutions</li>
+          <li>Follow your school's honor code and academic policies</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Communication Standards</h2>
+        <ul>
+          <li>Keep discussions constructive and on-topic</li>
+          <li>No spam, excessive self-promotion, or irrelevant advertising</li>
+          <li>Avoid inflammatory or provocative behavior</li>
+          <li>Use appropriate channels for complaints or disputes</li>
+          <li>Maintain professional communication with faculty and staff</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>8. Safety and Well-being</h2>
+        <ul>
+          <li>No promotion of self-harm or dangerous behavior</li>
+          <li>Report concerns about other users' safety</li>
+          <li>No threatening or intimidating behavior</li>
+          <li>Provide trigger warnings for sensitive content</li>
+          <li>Support fellow students in maintaining mental health</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>9. Reporting and Enforcement</h2>
+        <ul>
+          <li>Report violations through the in-app reporting system</li>
+          <li>Cooperate with moderators during investigations</li>
+          <li>
+            Multiple violations may result in permanent account suspension
+          </li>
+          <li>Appeals must be submitted within 14 days</li>
+          <li>False reporting may result in account penalties</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>10. Commercial Activity</h2>
+        <ul>
+          <li>No unauthorized advertising or marketing</li>
+          <li>Clear disclosure of sponsored content</li>
+          <li>No pyramid schemes or fraudulent opportunities</li>
+          <li>No selling or trading of goods/services without approval</li>
+          <li>Maintain transparency in all commercial interactions</li>
+        </ul>
+      </section>
+
+      <div class="warning">
+        Violation of these guidelines may result in content removal, account
+        suspension, or permanent ban from the Milaan platform. We reserve the
+        right to update these guidelines as needed to maintain a safe and
+        productive learning environment.
+      </div>
+    </div>
 
     <footer>
-      <p>&copy; 2025 Milaan App. All rights reserved. | Los Angeles, USA</p>
+      <p>© 2025 Milaan App. All rights reserved. | Los Angeles, USA</p>
     </footer>
   </body>
 </html>
